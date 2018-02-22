@@ -34,7 +34,7 @@ var articles = {
              <p>
                 This is article three.  This is my first web app project and i am loving this , deeply thanks to hasura . 
             </p> `
-}
+},
 
 };
 
