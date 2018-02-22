@@ -4,7 +4,7 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles={
+var articles = {
      'article-one': {
     title: 'Article One by pankajmahtolia',
     heading: 'Article One',
@@ -49,7 +49,7 @@ function createtemp(data){
     <html>
     <head>
         <title>
-            Article One by pankajmahtolia
+          ${title}
         </title>
         <meta name="viewport" content="width=device-widht, initial-scale=1" />
          <link href="/ui/style.css" rel="stylesheet" />
