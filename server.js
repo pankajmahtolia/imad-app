@@ -77,7 +77,7 @@ function createtemp(data){
     </body>
 </html>`
 ;
-  return template;
+  return templete;
 }
 
 app.get('/', function (req, res) {
