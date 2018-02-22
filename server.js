@@ -16,7 +16,7 @@ var articles = {
         
     
 },
- 'article-two': {
+     'article-two': {
     title: 'Article Two by pankajmahtolia',
     heading: 'Article Two',
     date: ' 23-Feb-2018',
@@ -26,7 +26,7 @@ var articles = {
             </p> `
     
 },
- 'article-three':{
+     'article-three': {
     title: 'Article Three by pankajmahtolia',
     heading: 'Article Three',
     date: ' 24-Feb-2018',
@@ -73,7 +73,7 @@ function createtemp(data){
         <div>
            ${content}
         </div>
-    </div>
+    </div>       
     </body>
 </html>`;
   return templete;
