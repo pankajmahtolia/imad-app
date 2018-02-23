@@ -17,12 +17,12 @@ function moveRight(){
     img.style.marginLeft=marginLeft+'px';
             
         }
-    else if(marginRight>150&&marginRight<=300){
+    else if(marginRight>150&&marginRight<=450){
     marginRight++;
     marginLeft=marginLeft-1;
     img.style.marginLeft=marginLeft+'px';
     }
-    else if(marginRight>300){
+    else if(marginRight>450){
     marginRight=0;    
     }
 
