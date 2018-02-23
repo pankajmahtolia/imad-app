@@ -24,6 +24,7 @@ function moveRight(){
     }
     else if(marginRight>450){
     marginRight=0;    
+    marginLeft=0;
     }
 
     
