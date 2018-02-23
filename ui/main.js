@@ -5,12 +5,13 @@ var img = document.getElementById(`img`);
 var marginLeft=0;
 var marginRight=0;
 function moveRight(){
+    if(marginRight==10)
+        clearInterval(interval);
+    else{
     marginRight++;
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
-        if(marginRight==100)
-        clearInterval(interval);
-    
+    }
     
 }
 img.onclick =function(){
