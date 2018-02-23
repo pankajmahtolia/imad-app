@@ -5,7 +5,7 @@ var img = document.getElementById(`img`);
 var marginLeft=0;
 var marginRight=0;
 function moveRight(){
-    if(marginRight==250)
+    if(marginRight==150)
         clearInterval(interval);
     else{
     marginRight++;
