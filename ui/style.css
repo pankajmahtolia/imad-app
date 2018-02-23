@@ -27,3 +27,8 @@ body {
       padding-left: 20px;
       padding-right: 20px;
 }
+.heading{
+    font-size: 100%;
+    color: black;
+    font-weight:bold;
+}
