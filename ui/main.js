@@ -1,7 +1,7 @@
 console.log('Loaded GameOn!');
 
 //for moving madi (image)
-var img = document.getElementById(`tripu`);
+var img = document.getElementById(`img`);
 var marginLeft=0;
 function moveRight(){
     marginLeft=marginLeft+1;
