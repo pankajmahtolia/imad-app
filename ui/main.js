@@ -12,7 +12,7 @@ function moveRight(){
     
 }
 img.onclick =function(){
-    if(marginRight<100)
+    if(marginRight<10)
     var interval=setInterval(moveRight,10);
 
 };
