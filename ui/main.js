@@ -1,6 +1,6 @@
 console.log('Loaded GameOn!');
 
-//for moving madi (image)
+//for moving (image)
 var img = document.getElementById(`img`);
 var marginLeft=0;
 var marginRight=0;
