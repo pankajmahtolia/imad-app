@@ -11,18 +11,18 @@ img.onclick =function(){
 
 };
 function moveRight(){
-    if(marginRight>=0&&marginRight<=80)
+    if(marginRight>=0&&marginRight<=60)
         {marginRight++;
     marginLeft=marginLeft+1;
     img.style.marginLeft=marginLeft+'px';
             
         }
-    else if(marginRight>80&&marginRight<=240){
+    else if(marginRight>60&&marginRight<=180){
     marginRight++;
     marginLeft=marginLeft-1;
     img.style.marginLeft=marginLeft+'px';
     }
-    else if(marginRight>240){
+    else if(marginRight>180){
     marginRight=0;    
     marginLeft=0;
     }
