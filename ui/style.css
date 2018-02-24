@@ -33,7 +33,7 @@ body {
     font-weight:bold;
 }
 .table{
-    
+    background-color:grey;
     padding-left: 10px;
     padding-right: 10px;
     border: 1.5px solid black;
