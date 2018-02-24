@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: white;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .center {
@@ -33,7 +33,7 @@ body {
     font-weight:bold;
 }
 .table{
-    background-color:grey;
+    background-color:#a4fdc7;
     padding-left: 10px;
     padding-right: 10px;
     border: 1.5px solid black;
