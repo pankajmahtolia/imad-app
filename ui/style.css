@@ -38,6 +38,9 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border: 1.5px green;
+    margin-left:600px ;
+    margin-bottom:800px;
+    padding-top:20px;
 }
 .articleRow{
     color: black;
