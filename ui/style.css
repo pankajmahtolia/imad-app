@@ -33,7 +33,9 @@ body {
     font-weight:bold;
 }
 .table{
-    padding-left: 60px;
+    margin-left:50px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 1.5px solid black;
 }
 .articleRow{
