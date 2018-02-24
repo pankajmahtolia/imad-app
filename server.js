@@ -58,7 +58,7 @@ function createtemp(data){
     <body>
     <div class="box">
         <div>
-            <a href="/" class="heading">Home <font-size="-1>click to back</font></a>
+            <a href="/" class="heading">Home <font-size="-5>click to back</font></a>
             
         </div>
         <hr/>
