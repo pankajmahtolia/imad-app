@@ -23,17 +23,17 @@ body {
 .box{
       max-width: 800px;
       margin: 0 auto;
-      color: #695b5b;
+      color: #17ec00;
       padding-left: 20px;
       padding-right: 20px;
 }
 .heading{
     font-size: 100%;
-    color: black;
+    color: #e81414;
     font-weight:bold;
 }
 .table{
-    background-color:#a4fdc7;
+    background-color:#ffffff;
     padding-left: 10px;
     padding-right: 10px;
     border: 1.5px solid black;
