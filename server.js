@@ -7,7 +7,7 @@ var config ={
     database: 'pankajmahtolia0',
     host:'db.imad.hasura-app.io',
     port: '5432',
-    password: process.env.DB_PASSWORD
+    password: process.env.db-pankajmahtolia0-5728
 }; 
 var app = express();
 app.use(morgan('combined'));
