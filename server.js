@@ -6,8 +6,9 @@ var config ={
     user: 'pankajmahtolia0',
     database: 'pankajmahtolia0',
     host:'db.imad.hasura-app.io',
-    port
-};
+    port: '5432',
+    password: process.env.pankaj,
+}; 
 var app = express();
 app.use(morgan('combined'));
 var articles = {
@@ -91,14 +92,14 @@ app.get('/', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
+var pool =new Pool(config);
 app.get('/myarticles/:articleName', function (req, res) {
     //SQL querry 
     pool.query("SELECT *FROM myarticles WHERE title =" +req.param.articleName, function(err,result){
         if(err){
             res.status(500).send(err.toString());}
             else if(result.rows.length === 0){
-                res.status(404).send('myarticle not found');}
+                res.status(404).send('myarticles not found');}
                 else{
                     var articleData=result.rows[0];
                       res.send(createtemp(articleData));
