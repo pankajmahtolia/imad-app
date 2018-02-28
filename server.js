@@ -11,7 +11,7 @@ var config ={
 }; 
 var app = express();
 app.use(morgan('combined'));
-var articles = {
+var myarticles = {
      'article-one': {
     title: 'Article One by pankajmahtolia',
     heading: 'Article One',
