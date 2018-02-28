@@ -7,7 +7,7 @@ var config ={
     database: 'pankajmahtolia0',
     host:'db.imad.hasura-app.io',
     port: '5432',
-    password: process.env.pankaj,
+    password: process.env.,
 }; 
 var app = express();
 app.use(morgan('combined'));
@@ -75,7 +75,7 @@ function createtemp(data){
          </h1>
        
         <div>
-            ${date}
+            ${date.todate()}
         </div>
         <div>
            ${content}
@@ -95,7 +95,7 @@ app.get('/ui/main.js', function (req, res) {
 var pool =new Pool(config);
 app.get('/myarticles/:articleName', function (req, res) {
     //SQL querry 
-    pool.query("SELECT *FROM myarticles WHERE title =" +req.param.articleName, function(err,result){
+    pool.query("SELECT *FROM myarticles WHERE title ='" +req.param.articleName +"'", function(err,result){
         if(err){
             res.status(500).send(err.toString());}
             else if(result.rows.length === 0){
