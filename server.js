@@ -1,7 +1,13 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var Pool = require('pg').Pool;
+var config ={
+    user: 'pankajmahtolia0',
+    database: 'pankajmahtolia0',
+    host:'db.imad.hasura-app.io',
+    port
+};
 var app = express();
 app.use(morgan('combined'));
 var articles = {
@@ -86,9 +92,19 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/:articleName', function (req, res) {
-   var articleName=req.params.articleName;
-  res.send(createtemp(articles[articleName]));
+app.get('/myarticles/:articleName', function (req, res) {
+    //SQL querry 
+    pool.query("SELECT *FROM myarticles WHERE title =" +req.param.articleName, function(err,result){
+        if(err){
+            res.status(500).send(err.toString());}
+            else if(result.rows.length === 0){
+                res.status(404).send('myarticle not found');}
+                else{
+                    var articleData=result.rows[0];
+                      res.send(createtemp(articleData));
+                }
+            
+        });
 });
 
 app.get('/ui/style.css', function (req, res) {
