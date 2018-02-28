@@ -89,9 +89,6 @@ function createtemp(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
-});
 var pool =new Pool(config);
 app.get('/myarticles/:articleName', function (req, res) {
     //SQL querry 
@@ -106,6 +103,10 @@ app.get('/myarticles/:articleName', function (req, res) {
                 }
             
         });
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/ui/style.css', function (req, res) {
