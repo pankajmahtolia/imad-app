@@ -7,7 +7,7 @@ var config ={
     database: 'pankajmahtolia0',
     host:'db.imad.hasura-app.io',
     port: '5432',
-    password: process.env.,
+    password: process.env.db-pankajmahtolia0-5728
 }; 
 var app = express();
 app.use(morgan('combined'));
@@ -75,7 +75,7 @@ function createtemp(data){
          </h1>
        
         <div>
-            ${date.todate()}
+            ${date.toDateString()}
         </div>
         <div>
            ${content}
