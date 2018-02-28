@@ -11,39 +11,7 @@ var config ={
 }; 
 var app = express();
 app.use(morgan('combined'));
-var myarticles = {
-     'article-one': {
-    title: 'Article One by pankajmahtolia',
-    heading: 'Article One',
-    date: ' 22-Feb-2018',
-    content: `  
-             <p>
-                This is article one.  This is my first web app project and i am loving this , deeply thanks to hasura . 
-            </p> `
-        
-    
-},
-     'article-two': {
-    title: 'Article Two by pankajmahtolia',
-    heading: 'Article Two',
-    date: ' 23-Feb-2018',
-    content: `  
-             <p>
-                This is article two.  This is my first web app project and i am loving this , deeply thanks to hasura . 
-            </p> `
-    
-},
-     'article-three': {
-    title: 'Article Three by pankajmahtolia',
-    heading: 'Article Three',
-    date: ' 24-Feb-2018',
-    content: `  
-             <p>
-                This is article three.  This is my first web app project and i am loving this , deeply thanks to hasura . 
-            </p> `
-},
 
-};
 
 
 function createtemp(data){
