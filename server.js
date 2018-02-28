@@ -58,7 +58,7 @@ app.get('/', function (req, res) {
 var pool =new Pool(config);
 app.get('/myarticles/:articleName', function (req, res) {
     //SQL querry 
-    pool.query("SELECT * FROM myarticles WHERE title =#", [req.params.articleName], function(err,result){
+    pool.query("SELECT * FROM myarticles WHERE title =#1", [req.params.articleName], function(err,result){
         if(err){
             res.status(500).send(err.toString());}
             else {
