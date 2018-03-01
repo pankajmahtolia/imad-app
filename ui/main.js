@@ -13,12 +13,15 @@ button.onclick = function(){
       if(request.readyState === XMLHttpRequest.Done){
       //successsful or not
       if(request.status === 200){
-          var counter = counter+1;
+          var counter = request.reponseText;
           var span = document.getElementById('count');
           span.innerHTML = counter.toString();
           
         }
-      //else 
+        else{
+            counter = counter+1;
+          span.innerHTML = counter.toString();
+        }
      
       }
     };
