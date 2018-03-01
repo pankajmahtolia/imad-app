@@ -40,6 +40,7 @@ button.onclick = function(){
   var request = XMLHttpRequest();
   //condition of request
   request.onreadystatechange=function(){
+      if(request.readyState===XMLHttpRequest.Done){
       //successsful or not
       if(request.status===200){
           var counter=request.responseText;
@@ -50,6 +51,7 @@ button.onclick = function(){
       //else 
       else{
           request.send('request not made');
+      }
       }
   };
   
