@@ -18,10 +18,7 @@ button.onclick = function(){
           span.innerHTML = counter.toString();
           
         }
-        else{
-            counter = counter+1;
-          span.innerHTML = counter.toString();
-        }
+       
      
       }
     };
