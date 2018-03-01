@@ -37,7 +37,7 @@ var button = document.getElementById('counter');
 //on click
 button.onclick = function(){
   // creating a request to browsre
-  var request = XMLHttpRequest();
+  var request = new XMLHttpRequest();
   //condition of request
   request.onreadystatechange=function(){
       if(request.readyState===XMLHttpRequest.Done){
