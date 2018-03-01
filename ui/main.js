@@ -38,6 +38,9 @@ var button = document.getElementById('counter');
 button.onclick = function(){
   // creating a request to browsre
   var request = new XMLHttpRequest();
+  request.open('GET','http://pankajmahtolia0.imad.hasura-app.io/counter',true);
+  request.send(null);
+  
   //condition of request
   request.onreadystatechange=function(){
       if(request.readyState===XMLHttpRequest.Done){
@@ -54,8 +57,6 @@ button.onclick = function(){
   };
   
   // before going to onreadystate function it will make a request
-  request.open('GET','http://pankajmahtolia0.imad.hasura-app.io/counter',true);
-  request.send(null);
   
 };
 
