@@ -4,30 +4,11 @@ console.log('Loaded GameOn!');
 
 var button = document.getElementById('counter');
 
-//on click
+var counter =0;
 button.onclick = function(){
-  // creating a request to browsre
-  var request = new XMLHttpRequest();
-
-  
-  //condition of request
-  request.onreadystatechange = function(){
-      if(request.readyState === XMLHttpRequest.Done){
-      //successsful or not
-      if(request.status === 200){
-          var counter = request.responseText;
-          var span = document.getElementById('count');
-          span.innerHTML = counter.toString();
-          
-        }
-      //else 
-     
-      }
-    };
-  
-    // before going to onreadystate function it will make a request
-    request.open('GET','http://pankajmahtolia0.imad.hasura-app.io/counter',true);
-    request.send(null);
+  counter=counter+1;
+  var span =document.getElementById('count');
+  span.innerHTML=counter.toString();
 };
 
 
