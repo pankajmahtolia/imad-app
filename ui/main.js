@@ -29,3 +29,34 @@ function moveRight(){
 
     
 }
+
+// click Me button
+
+var button = document.getElementById(`counter`);
+
+//on click
+button.onclick = function(){
+  // creating a request to browsre
+  var request = XMLHttpRequest();
+  //condition of request
+  request.onreadystatechange=function(){
+      //successsful or not
+      if(request.status===200){
+          var counter=request.responseText;
+          var span=document.getElementById(`count`);
+          span.innerHTML=counter.toString();
+          
+      }
+      //else 
+      else{
+          request.send('request not made');
+      }
+  };
+  
+  // before going to onreadystate function it will make a request
+  request.open('GET','http://pankajmahtolia0.imad.hasura-app.io/counter',true);
+  request.send(null);
+  
+};
+
+
