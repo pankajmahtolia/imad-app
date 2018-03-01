@@ -49,9 +49,7 @@ button.onclick = function(){
           
       }
       //else 
-      else{
-          request.send('request not made');
-      }
+     
       }
   };
   
